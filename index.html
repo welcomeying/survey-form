@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <main class="container">
+  <h1 id="title">Survey Form</h1>
+  <form id="survey-form">
+    <p id="description">Demographic Questions</p>
+    <div class="labels">
+      <label id="name-label" for="name">*Name:</label>
+    </div>
+    <div class="answer-area">
+      <input id="name" class="answer-area" type="text" placeholder="Enter your name" required>
+    </div>
+    <div class="labels">
+      <label id="email-label" for="email">*Email:</label>
+    </div>
+    <div class="answer-area">
+      <input id="email" class="answer-area" type="email" placeholder="Enter your email" required>
+    </div>
+    <div class="labels">
+      <label id="number-label" for="number">Age:</label>
+    </div>
+    <div class="answer-area">
+      <input id="number" class="answer-area" type="number" min="1" max="150" placeholder="Enter your Age">
+    </div>
+    <div class="labels">
+      <label for="dropdown">Current Role:</label>
+    </div>
+    <div class="answer-area">
+      <select id="dropdown">
+        <option value="select">Select an option</option>
+        <option value="student">Student</option>
+        <option value="full-time">Full-time employee</option>
+        <option value="part-time">Part-time employee</option>
+        <option value="not-to-say">Prefer not to say</option>
+        <option value="other">other</option>
+      </select>
+    </div>
+    <div class="labels">
+      <label for="sex">Sex:</label>
+    </div>
+    <div class="answer-area">
+      <ul id="sex">
+        <li class="radio"><label><input name="sex" value="1" type="radio">Male</label></li>
+        <li class="radio"><label><input name="sex" value="2" type="radio">Female</label></li>
+        <li class="radio"><label><input name="sex" value="3" type="radio">Other</label></li>
+      </ul>
+    </div>
+    <div class="labels">
+      <label for="ethnicity">Ethnicity:</label>
+    </div>
+    <div class="answer-area">
+        <ul id="ethnicity">
+        <li class="checkbox"><label><input name="ethnicity" value="1" type="checkbox">White/Caucasian</label></li>
+        <li class="checkbox"><label><input name="ethnicity" value="2" type="checkbox">Hispanic/Latino</label></li>
+        <li class="checkbox"><label><input name="ethnicity" value="3" type="checkbox">Black/African American</label></li>
+          <li class="checkbox"><label><input name="ethnicity" value="4" type="checkbox">Asian</label></li>
+          <li class="checkbox"><label><input name="ethnicity" value="5" type="checkbox">Prefer not to say</label></li>
+          <li class="checkbox"><label><input name="ethnicity" value="6" type="checkbox">Other</label></li>
+      </ul>
+    </div>
+    <div class="labels">
+      <label for="comments">Comments:</label>
+    </div>
+    <div class="answer-area">
+      <textarea id="comments" class="answer-area"></textarea>
+    </div>
+    <div>
+      <input id="submit" type="submit" value="Submit" class="btn btn-primary">
+    </div>
+  </form>
+  <div id="note">*Required field.</div>
+</main>
+  <script src='https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js'></script>
+
+  
+
+</body>
+
+</html>

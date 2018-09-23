@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(45deg, #CCFFFF, #FFCCCC);
+  text-align: center;
+}
+
+#survey-form{
+  background: #FFF;
+  padding: 10px;
+}
+
+h1 {
+  margin: 20px;
+}
+
+#description {
+  font-size: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 30%;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+
+
+.answer-area {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 50%;
+}
+
+ul {
+  list-style: none; 
+}
+
+.checkbox, .radio {
+  position: relative;
+  left: -38px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+#note {
+  font-size: 14px;
+  margin: 20px;
+}
